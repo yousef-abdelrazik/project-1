@@ -97,7 +97,7 @@ a {
     height: 600px;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media screen and (min-width: 270px) and (max-width: 800px) {
     .containar .section-1 .right-section-1 img {
         position: relative;
         top: -440px;
