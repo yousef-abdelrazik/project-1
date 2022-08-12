@@ -10,6 +10,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: 100vh;
+    width: 100%;
 }  
 body::before {
     content: "";
@@ -33,7 +35,7 @@ a {
     text-decoration: none;
 }
 nav {
-    box-shadow: 0 0 9px;
+    box-shadow: 0 0 3px;
 }
 .left-header {
     display: flex;
@@ -108,14 +110,73 @@ nav {
 }
 .containar .section-1 .right-section-1 img {
     position: relative;
-    top: -60px;
+    top: -70px;
     width: 600px;
     height: 600px;
+    animation-name: rotate;
+    animation-duration: 11s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-/* @media screen and (min-width: 260px) and (max-width: 800px) { */
+ @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
 
-    @media screen and (min-width: 260px) and (max-width: 800px) {
+@media screen and (min-width:400px) and (max-width:707px) {
+    .containar .section-1 .left-section-1 h1 {
+        position: absolute;
+        top: 190px;
+        font-size: 44px;
+        font-weight: bold;
+        width: 103%;
+        margin: auto;
+    }
+    .containar .section-1 .right-section-1 img {
+
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: -150px;
+        margin: auto;
+        left: 8%;
+    }
+    .containar .section-1 .left-section-1 p {
+        position: absolute;
+        top: 290px;
+        width: 100%;
+        font-size: 14;
+    }
+    .containar .section-1 .left-section-1 a {
+        width: 90%;
+        text-align: center;
+        border-radius: 30px;
+        position: absolute;
+        top: 390px;
+
+    }
+
+
+
+
+
+
+
+
+
+/
+
+
+
+
+/* @media screen and (min-width: 260px) and (max-width: 800px) { */
+/* 
+    @media screen and (max-width:412px) {
         body {
             height: 100vh;
             width: 100%;
@@ -140,11 +201,11 @@ nav {
         }
         nav {
             position: fixed;
-        }
-    .section-1 {
-        display: block;
-    }
-    .containar .section-1 .right-section-1 img {
+        } */
+        /* .containar .section-1 {
+           flex-direction: column;
+        } */
+    /* .containar .section-1 .right-section-1 img {
         position: absolute;
         top: -140px;
         width: 300px;
@@ -182,9 +243,9 @@ nav {
         text-align: center;
         
     }
-  
+   */
 
-}
+
 
 
 
