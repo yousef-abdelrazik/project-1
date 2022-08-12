@@ -128,7 +128,7 @@ nav {
     }
 } 
 
-@media screen and (min-width:200px) and (max-width:707px) {
+@media screen and (min-width:200px) and (max-width:900px) {
     .containar .section-1 .left-section-1 h1 {
         position: absolute;
         top: 190px;
